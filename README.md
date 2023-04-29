@@ -27,7 +27,7 @@ To get started, make sure you have OpenHAB and HABApp set up and running in your
 
 ## Repository Structure
 
-The repository is organized based on the structure seen from the OpenHAB directory where `habapp? is a sub folder. Explore the directories below to find examples related to different aspects of home automation:
+The repository is organized based on the structure seen from the OpenHAB directory where `habapp` is a sub folder. Explore the directories below to find examples related to different aspects of home automation:
 
 - `habapp/config`: Configuration files and settings related to your HABApp setup.
 
