@@ -3,7 +3,7 @@ A collection of HABApp scripts for OpenHAB to inspire developers in creating the
 
 # HABApp-Inspiration
 
-![HABApp-Inspiration](https://your-image-url.com)
+![HABApp-Inspiration](https://github.com/besynnerlig/HABApp-Inspiration/blob/main/images/Screenshot%20from%202023-04-29%2013-55-01.png)
 
 Welcome to the HABApp-Inspiration repository! This repository provides a collection of HABApp scripts for the OpenHAB environment, designed to inspire and guide you in creating your own custom automation solutions.
 
