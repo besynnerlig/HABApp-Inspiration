@@ -1,7 +1,4 @@
 # HABApp-Inspiration
-A collection of HABApp scripts for OpenHAB to inspire developers in creating their own custom automation solutions.
-
-# HABApp-Inspiration
 
 Welcome to the HABApp-Inspiration repository! This repository provides a collection of HABApp scripts for the OpenHAB environment, designed to inspire and guide you in creating your own custom automation solutions.
 
