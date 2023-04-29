@@ -1,0 +1,250 @@
+configuration:
+  system:
+    ADMIN_EMAIL: "MYNAME@MYNAME.nu"
+    OPENHAB_HOST: "localhost"
+    OPENHAB_PORT: "8090"
+    LOCAL_TIME_ZONE: "Europe/Stockholm"
+    MY_LOGGER_NAME: "MyRule"
+  entsoe:
+    COUNTRY_CODE: 'SE'
+    AREA: 4
+    API_KEY: 'SOME-SECRET-KEY-OR-TOKEN'
+    API_TIME_TZINFO: 'UTC'
+    DAY_AHEAD_PRICES_ARRIVE_TIME_HOUR: 12
+    DAY_AHEAD_PRICES_ARRIVE_TIME_MINUTE: 47
+  pushover:
+    PUSHOVER_PRIO:
+      LOWEST: -2
+      LOW: -1
+      NORMAL: 0
+      HIGH: 1
+      EMERGENCY: 2
+    PUSHOVER_DEF_DEV: 'MYNAMEphone'
+    user_token: 'SOME-SECRET-KEY-OR-TOKEN'
+    api_token: 'SOME-SECRET-KEY-OR-TOKEN'
+  weather:
+    WIND_SPEEDS:
+      CALM_TO_LIGHT_BREEZE: 3.4
+      GENTLE_BREEZE: 5.5
+      MODERATE_BREEZE: 8.0
+      FRESH_BREEZE: 10.8
+      STRONG_BREEZE: 13.9
+      MODERATE_GALE: 17.2
+      FRESH_GALE: 20.8
+      STRONG_GALE: 24.5
+      STORM: 28.5
+      VIOLENT_STORM: 32.7
+      HURRICANE: 999.9
+    WIND_TEXTS:
+      0: 'Calm to light breeze. 0–3,3 m/s'
+      1: 'Gentle breeze. 3,4–5,4 m/s'
+      2: 'Moderate breeze. 5,5–7,9 m/s'
+      3: 'Fresh breeze. 8,0–10,7 m/s'
+      4: 'Strong breeze. 10,8–13,8 m/s'
+      5: 'Moderate gale. 13,9–17,1 m/s'
+      6: 'Fresh gale. 17,2–20,7 m/s'
+      7: 'Strong gale. 20,8–24,4 m/s'
+      8: 'Storm. 24,5–28,4 m/s'
+      9: 'Violent storm. 28,5–32,6 m/s'
+      10: 'Hurricane. Mer än 32,6 m/s'
+    SMHI_WEATHER:
+      - 'Inget'
+      - 'Klart'
+      - 'Lätt molnighet'
+      - 'Halvklart'
+      - 'Molnigt'
+      - 'Mycket moln'
+      - 'Mulet'
+      - 'Dimma'
+      - 'Lätt regnskur'
+      - 'Regnskur'
+      - 'Kraftig regnskur'
+      - 'Åskskur'
+      - 'Lätt by av regn och snö'
+      - 'By av regn och snö'
+      - 'Kraftig by av regn och snö'
+      - 'Lätt snöby'
+      - 'Snöby'
+      - 'Kraftig snöby'
+      - 'Lätt regn'
+      - 'Regn'
+      - 'Kraftigt regn'
+      - 'Åska'
+      - 'Lätt snöblandat regn'
+      - 'Snöblandat regn'
+      - 'Kraftigt snöblandat regn'
+      - 'Lätt snöfall'
+      - 'Snöfall'
+      - 'Ymnigt snöfall'
+  time_of_day:
+    SOLAR_TIME_OF_DAY:
+      - Gryning
+      - Dag
+      - Skymning
+      - Natt
+    CLOCK_TIME_OF_DAY:
+      - Morgon
+      - Dag
+      - Kväll
+      - Natt
+  energy:
+    ENERGY_SPENDING_LEVELS:
+      Normal: 0
+      Spara: -1
+      Slösa: 1
+      Bränn: 2
+    MAX_GRID_FEED_IN_POWER: 12500
+    BLOCK_ELECTRICAL_ADDON_ABOVE_TEMP: 3.5
+  area_triggers:
+    lux_item_name: 'Lux_Stair'
+    area_trigger_mode_or_lux_change_item_name: 'Area_Trigger_Mode_Or_Lux_Change'
+    lighting_mode_item_name: 'Mode'
+    default_levels:
+      hue: 30
+      low_lux_trigger: 2147483647
+      saturation: 100
+      brightness: 60
+    default_action_function: 'generic_light_action'
+    default_action_functions:
+      - 'generic_action_function'
+    default_manual_dimmer_lock_level: -1
+  robonect:
+    MOWER_HOST: 'mymowerhost.iot.SOMELOCALDOMAIN'
+    MOWER_PORT: 80
+    MOWER_USER: 'MYNAME'
+    MOWER_PASSW: 'SOME-SECRET-KEY-OR-TOKEN'
+    MOWER_STATUS:
+      DETECTING_STATUS: 0
+      PARKING: 1
+      MOWING: 2
+      SEARCH_CHARGING_STATION: 3
+      CHARGING: 4
+      SEARCHING: 5
+      ERROR_STATUS: 7
+      LOST_SIGNAL: 8
+      OFF: 16
+      SLEEPING: 17
+      OFFLINE: 98
+      UNKNOWN: 99
+    MOWER_MODE:
+      AUTO: 0
+      MAN: 1
+      HOME: 2
+      DEMO: 3
+  blueiris:
+    BI_HOST: 'blue-iris.private.SOMELOCALDOMAIN'
+    BI_PORT: 81
+    BI_USER: 'MYNAME'
+    BI_PASSW: 'SOME-SECRET-KEY-OR-TOKEN'
+  lametric:
+    HOST: 'lametric.iot.SOMELOCALDOMAIN'
+    PORT: 4343
+    API_KEY: 'SOME-SECRET-KEY-OR-TOKEN'
+    DEFAULT_LIFETIME: 120000
+    DEFAULT_NOTIFICATION_SOUND: 'lose1'
+    DEFAULT_ICON: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAUklEQVQYlWNUVFBgYGBgYBC98uE/AxJ4rSPAyMDAwMCETRJZjAnGgOlAZote+fCfCV0nOmA0+yKAYTwygJuAzQoGBgYGRkUFBQZ0dyDzGQl5EwCTESNpFb6zEwAAAABJRU5ErkJggg=='
+  custom_item_names:
+    clock_time_of_day_item: 'Clock_Time_Of_Day'
+    solar_time_of_day_item: 'Solar_Time_Of_Day'
+    sysLightLevel: 'Sys_LightLevel'
+    allowTTSSwitch: 'Sonos_Allow_TTS_And_Sounds'
+    odTemp: 'Pws_Temp'
+    odHum: 'Smhi_Humidity'
+    lightSensors:
+      - 'Pws_Light'
+      - 'Node7_Light'
+    pressure: 'Pws_Pressure'
+    idTemp: 'Temp_Hallway'
+    idHum: 'Hum_Hallway'
+    windDir: 'Pws_Wind_Dir_10m'
+    windSpeed: 'Pws_Wind_Speed_10m'
+    windGustDir: 'Pws_Wind_Gust_Dir_10m'
+    windGustSpeed: 'Pws_Wind_Gust_10m'
+  custom_group_names:
+    lockDevice: 'G_Normally_Open'
+  customDateTimeFormats:
+    date: 'yyyy-MM-dd'
+    dateTime: 'yyyy-MM-dd HH:mm:ss'
+    time: 'HH:mm:ss'
+  clickatell:
+    sender: 'SOMEPHONENUMBER'
+    user: 'MYNAME'
+    password: 'SOME-SECRET-KEY-OR-TOKEN'
+    apiid: 3562701
+    phonebook:
+      Default: 'SOMEPHONENUMBER'
+      Friendsname1: 'SOMEPHONENUMBER'
+  sonos:
+    TTS_HOST: 'ubuntu2204.private.SOMELOCALDOMAIN'
+    rooms:
+      Vardagsrummet:
+        name: 'Vardagsrummet'
+        audiosink: 'sonos:One:RINCON_00000000000000000000000'
+        default_tts_device: false
+        volume: 40
+        tts_volume: 40
+        tts_lang: 'sv-SE'
+        tts_voice: 'Elin'
+        tts_engine: 'neural'
+        tts_gender: 'female'
+      TV-Rummet:
+        name: 'TV-Rummet'
+        audiosink: 'sonos:ARC:RINCON_00000000000000000000000'
+        default_tts_device: true
+        volume: 40
+        tts_volume: 40
+        tts_lang: 'sv-SE'
+        tts_voice: 'Elin'
+        tts_engine: 'neural'
+        tts_gender: 'female'
+  surveillance:
+    CAM_DOMAIN: 'cctv.SOMELOCALDOMAIN'
+    CAM_LOGIN: 'PASSWORD'
+    WEB_CAMS:
+      - hostname: 'cam-driveway'
+        shortname: 'driveway'
+        enabled: true
+        PTZ: false
+        Model: 'IPC-T5442T-ZE'
+        focal_length_mm: '2.7-12'
+        outDoors: true
+        useSecMask: true
+        switchProfiles: true
+        comment: ''
+        lastProfile: ''
+      - hostname: 'cam-garden-shed'
+        shortname: 'garden-shed'
+        enabled: true
+        PTZ: false
+        Model: 'IPC-T5442TM-AS'
+        focal_length_mm: '2.8'
+        outDoors: true
+        useSecMask: true
+        switchProfiles: true
+        comment: ''
+        lastProfile: ''
+  influxdb:
+    TOKEN: 'SOMETOKEN=='
+    ORG: 'SOMELOCALDOMAIN'
+    BUCKET: 'openhab_db/autogen'
+    URL: 'http://influxdb2.private.SOMELOCALDOMAIN:8086'
+  apilayer:
+    EXCHANGE_RATES_URL: 'https://api.apilayer.com/exchangerates_data/latest'
+    EXCHANGE_RATES_DATA_API_KEY: 'SOMEAPIKEY'
+  riksbanken:
+    SWEA_API_LATEST_OBSERVATIONS_URL: 'https://api-test.riksbank.se/swea/v1/Observations/Latest/SEKEURPMI'
+    OCP_APIM_SUBSCRIPTION_KEY: 'SOMESECRETKEY'
+  grafana:
+    URL: 'https://grafana.private.SOMELOCALDOMAIN:3000'
+    USERNAME: 'auser'
+    PASSWORD: 'password'
+    VIEWER_USERNAME: 'guestviewer'
+    VIEWER_PASSWORD: '123'
+    TIME_ZONE: "UTC"
+  openevse:
+    EVSE_PROTOCOL: 'http'
+    EVSE_HOST: 'openevse.iot.SOMELOCALDOMAIN'
+    EVSE_LOGIN: 'MYNAME:passw'
+  autoremote:
+    key: 'lenthy-KEY'
+    password: 'secret-password'
