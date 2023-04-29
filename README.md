@@ -3,9 +3,6 @@ A collection of HABApp scripts for OpenHAB to inspire developers in creating the
 
 # HABApp-Inspiration
 
-![HABApp-Inspiration](https://github.com/besynnerlig/HABApp-Inspiration/blob/main/images/Screenshot%20from%202023-04-29%2013-55-01.png)
-<img src="https://github.com/besynnerlig/HABApp-Inspiration/blob/main/images/Screenshot%20from%202023-04-29%2013-55-01.png" alt="HABApp-Inspiration" width="100" />
-
 Welcome to the HABApp-Inspiration repository! This repository provides a collection of HABApp scripts for the OpenHAB environment, designed to inspire and guide you in creating your own custom automation solutions.
 
 **Please note:** This repository is not officially affiliated with or endorsed by HABApp or OpenHAB. It is a personal project created by me as an enthusiast to share code examples and inspire others in their home automation journey.
